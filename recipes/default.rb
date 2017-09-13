@@ -13,7 +13,7 @@ execute 'set-hostname' do
   command 'chmod 777 /etc/profile.d/hostname.sh'
 end
 execute 'ipa-install' do
-  command 'ipa-server-install --setup-dns -U --realm=REAN.INTERNAL --domain=rean.internal --hostname=awsfreipa.rean.internal --ds-password=password@123 --admin-password=password@123 --ip-address=10.0.1.23 --forwarder=8.8.8.8'
+  command 'ipa-server-install --setup-dns -U --realm=REAN.INTERNAL --domain=rean.internal --hostname=awsfreipa.rean.internal --ds-password=password@123 --admin-password=password@123 --ip-address=10.0.1.84 --forwarder=8.8.8.8'
 end
 execute 'install' do
   command 'yum -y install firewalld'
