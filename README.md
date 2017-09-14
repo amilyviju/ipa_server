@@ -5,4 +5,4 @@ You can change the hostname and installation options by editing the following co
 
 echo hostnamectl set-hostname <FQDN> --static >> /etc/profile.d/hostname.sh
 
-ipa-server-install --setup-dns -U --realm=REAN.INTERNAL --domain=rean.internal --hostname=awsfreipa.rean.internal --ds-password=password@123 --admin-password=password@123 --ip-address=10.0.1.84 --forwarder=8.8.8.8
+ipa-server-install --setup-dns -U --realm=<realm> --domain=<domain-name> --hostname=<FQDN> --ds-password=<password> --admin-password=<password> --ip-address=<pvt-ip-addr> --forwarder=8.8.8.8
